@@ -1,0 +1,49 @@
+import java.util.*;
+class calculator
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("*********************Calculator*******************");
+        System.out.println("1.Addition");
+        System.out.println("2.Substraction");
+        System.out.println("3.Multiplication");
+        System.out.println("4.Division");
+        System.out.println("************************************************");
+        System.out.println("Enter your Choice");
+        int ch = sc.nextInt();
+        System.out.println("Enter a Value of a:");
+        float a = sc.nextFloat();
+        System.out.println("Enter a Value of b:");
+        float b = sc.nextFloat();
+        switch(ch)
+        {
+            case 1:
+            float c = a+b;
+            System.out.println("Additon:"+c);
+            break;
+
+            case 2:
+            float d = a-b;
+            System.out.println("Substraction:"+d);
+            break;
+
+            case 3:
+            float e = a*b;
+            System.out.println("Multiplication:"+e);
+            break;
+
+            case 4:
+            float f = a/b;
+            System.out.println("Division:"+f);
+            break;
+            
+            default:
+            System.out.println("Please Enter Valid Choice");
+
+        }
+        
+        
+    }
+
+}
